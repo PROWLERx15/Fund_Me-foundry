@@ -23,7 +23,7 @@ contract HelperConfig is Script {
     }
 
     constructor() {
-        if (block.chainid == 1115511) {
+        if (block.chainid == 11155111) {
             Active_NetworkConfig = getSepoliaETH_Config();
         } else if (block.chainid == 1) {
             Active_NetworkConfig = getMainnetETH_Config();
